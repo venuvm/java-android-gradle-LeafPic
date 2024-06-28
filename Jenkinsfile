@@ -1,5 +1,7 @@
 pipeline {
-  
+  agent {
+    label 'gradle-node'
+  }
   stages {
     stage('Pull Source') {
       // Get some code from a GitHub repository
